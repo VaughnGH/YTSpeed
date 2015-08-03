@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "YT",
+  "description": "A tiny tweak which allows custom YouTube playback speed ranging from 0 to 4.0x",
+  "version": "0.0.0.1",
+  "offline_enabled": true,
+
+  "browser_action": {
+    "default_icon": "/icons/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Change Speed!"
+  },
+ "icons": {
+    "32": "/icons/icon32.png",
+    "64": "/icons/icon64.png",
+    "128": "/icons/icon128.png",
+    "256": "/icons/icon256.png"
+  },
+"permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "https://youtube.com/",
+    "http://youtube.com/",
+    "https://khanacademy.org/",
+    "http://khanacademy.org/"]
+}

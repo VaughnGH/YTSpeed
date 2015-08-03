@@ -1,0 +1,32 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+html {
+    height: 200px;
+    width: 200px;
+    padding: 0px 5px 10px 5px;
+    background-color: azure;
+}
+body {
+    text-align: center;
+    padding: 0px 0px 3px 0px;
+}
+p {
+    font-family: 'Raleway', sans-serif, font-weight: 200;
+    text-align: center;
+}
+h3 {
+    font-size: 150%;
+}
+
+input {
+    color: #000;
+}
+input::-webkit-input-placeholder {
+    color: #555;
+}
+input:focus::-webkit-input-placeholder {
+    color: #999;
+}
+
+input:-moz-placeholder {  
+    color: #555;  
+}
