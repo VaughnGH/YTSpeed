@@ -1,28 +1,48 @@
 <!doctype html>
 <html>
   <head>
-   <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="options.css">
       
     <title>YTSpeed</title>
 
   </head>
   <body>
-      <h3><font face=Raleway>YTSpeed</font></h3>
+      <h3>YTSpeed</h3>
       <!--
       <p><input type="text" id="mini" name="mini" placeholder="Min"></p>
       <p><input type="text" id="maxi" name="maxi" placeholder="Max"></p> -->
-<p><button type="submit" id="onex">1x</button><button type="submit" id="ox">1.5x</button><button type="submit" id="twox">2x</button><button type="submit" id="tx">2.5x</button></p>
-<p><button type="submit" id="threex">3x</button><button type="submit" id="thx">3.5x</button><button type="submit" id="fourx">4x</button>
-<button type="submit" id="kt">Khan 2x</button></p>
+      <p>
+      <button type="submit" class="button" value="1.0">1x</button>
+      <button type="submit" class="button" value="1.5">1.5x</button>
+      <button type="submit" class="button" value="2.0">2x</button>
+      <button type="submit" class="button" value="2.5">2.5x</button>
+      </p>
+      <p>
+      <button type="submit" class="button" value="3.0">3x</button>
+      <button type="submit" class="button" value="3.5">3.5x</button>
+      <button type="submit" class="button" value="4.0">4x</button>
+      </p>
 
 
- TEST 
-<div id="checkBox"></div>      
-<center><p id="printArea"> </p></center>
+<label>
+  <input id="checkBox" type="checkbox">    
+  Persist?
+</label>
+<center><div id="printArea"></div></center>
       
       
 <script src="script.js"></script>
+<script>
+chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
+    if (changeInfo.status == 'complete') {
+        init();
+          }
+         });
+document.addEventListener('DOMContentLoaded', function() {
+           init();
+         });
+
+</script>
   </body>
 </html>
 

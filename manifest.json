@@ -24,5 +24,8 @@
     "https://youtube.com/",
     "http://youtube.com/",
     "https://khanacademy.org/",
-    "http://khanacademy.org/"]
+    "http://khanacademy.org/"],
+"background": {
+    "page": "popup.html"
+  }
 }
